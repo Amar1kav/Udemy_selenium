@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from Utilities.ConfigReader import ReadConfig
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
@@ -9,6 +11,7 @@ class BasePage:
         self.driver = driver
 
     def find_element(self, locator, value):
+
         if str(value).endswith("_XPATH"):
             return self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value))
 
@@ -22,17 +25,19 @@ class BasePage:
             return self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value))
 
     def click(self, locator, value):
+        self.wait = WebDriverWait(self.driver, 10)
         if str(value).endswith("_XPATH"):
-            self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value)).click()
+            self.wait.until(EC.element_to_be_clickable((By.XPATH, ReadConfig().get_locators(locator, value)))).click()
+            # self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value))
 
         if str(value).endswith("_CSS"):
-            return self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value)).click()
+            self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ReadConfig().get_locators(locator, value)))).click()
 
         if str(value).endswith("_ID"):
-            return self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value)).click()
+            self.wait.until(EC.element_to_be_clickable((By.ID, ReadConfig().get_locators(locator, value)))).click()
 
         if str(value).endswith("_NAME"):
-            return self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value)).click()
+            self.wait.until(EC.element_to_be_clickable((By.NAME, ReadConfig().get_locators(locator, value)))).click()
 
     def send_keys(self, locator, value, text):
         if str(value).endswith("_XPATH"):
@@ -48,7 +53,7 @@ class BasePage:
         if str(value).endswith("_NAME"):
             return self.driver.find_element(By.XPATH, ReadConfig().get_locators(locator, value)).send_keys(text)
 
-    def select_by_visible_text(self, locator, value , text):
+    def select_by_visible_text(self, locator, value, text):
         drop_down = self.find_element(locator, value)
         select = Select(drop_down)
         select.select_by_visible_text(text)
