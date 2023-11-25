@@ -1,0 +1,28 @@
+2023-11-25 22:30:52,361- BasePage.py:[66] - [INFO]- Launching url
+2023-11-25 22:30:52,442023-11-25 22:30:52,990- test_Signup_Page.py:[18] - [INFO]- entering the test_do_singup
+2023-11-25 22:30:54,585- test_Signup_Page.py:[18] - [INFO]- entering the test_do_singup
+ATH
+2023-11-25 22:30:52,623- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_email_XPATH
+2023-11-25 22:30:52,693- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_city_XPATH
+2023-11-25 22:30:52,763- BasePage.py:[63] - [INFO]- selecting  the element visibledropdown_XPATHand value is Iceland
+2023-11-25 22:30:52,827- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_username_XPATH
+2023-11-25 22:30:52,885- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_password_XPATH
+2023-11-25 22:30:52,960- BasePage.py:[44] - [INFO]- clicking the element locatorbutton_submit_XPATH
+2023-11-25 22:30:53,196- BasePage.py:[66] - [INFO]- Launching url
+2023-11-25 22:30:53,255- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_name_XPATH
+2023-11-25 22:30:53,326- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_phone_XPATH
+2023-11-25 22:30:53,402- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_email_XPATH
+2023-11-25 22:30:54,134- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_city_XPATH
+2023-11-25 22:30:54,396- BasePage.py:[63] - [INFO]- selecting  the element visibledropdown_XPATHand value is Iceland
+2023-11-25 22:30:54,450- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_username_XPATH
+2023-11-25 22:30:54,503- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_password_XPATH
+2023-11-25 22:30:54,565- BasePage.py:[44] - [INFO]- clicking the element locatorbutton_submit_XPATH
+2023-11-25 22:30:54,951- BasePage.py:[66] - [INFO]- Launching url
+2023-11-25 22:30:55,017- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_name_XPATH
+2023-11-25 22:30:55,294- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_phone_XPATH
+2023-11-25 22:30:55,363- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_email_XPATH
+2023-11-25 22:30:55,424- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_city_XPATH
+2023-11-25 22:30:55,477- BasePage.py:[63] - [INFO]- selecting  the element visibledropdown_XPATHand value is Iceland
+2023-11-25 22:30:55,542- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_username_XPATH
+2023-11-25 22:30:55,607- BasePage.py:[58] - [INFO]- sendkeys the element locatorinputText_password_XPATH
+2023-11-25 22:30:55,685- BasePage.py:[44] - [INFO]- clicking the element locatorbutton_submit_XPATH
