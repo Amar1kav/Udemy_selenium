@@ -10,9 +10,13 @@ from webdriver_manager.firefox import GeckoDriverManager
 @pytest.fixture(scope="class")
 def setup(request):
     from selenium.webdriver.chrome.options import Options
+    option = Options()
+    option.add_argument("--disable-notifications")
+    option.add_argument("start-maximized")
+    option.add_argument("--disable-extensions")
     serv = Service(ChromeDriverManager().install())
-    opt = Options().add_experimental_option("detach", True)
-    driver = webdriver.Chrome(service=serv, options=opt)
+    option.add_experimental_option("detach", True)
+    driver = webdriver.Chrome(service=serv, options=option)
     request.cls.driver = driver
     # if request.param == "firefox":
     #     serv = Service(GeckoDriverManager().install())

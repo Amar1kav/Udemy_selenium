@@ -1,0 +1,12 @@
+2023-12-02 13:56:04,668- BasePage.py:[76] - [INFO]- Launching url
+2023-12-02 13:56:04,668- B2023-12-02 13:56:20,131- test_NewCarHomePage.py:[27] - [INFO]- driver title : Maruti Suzuki Car Price in India - Nexa Models 2023 - Reviews, Specs & Dealers - CarWale
+2023-12-02 13:56:20,140- test_NewCarHomePage.py:[30] - [INFO]- Maruthi title is verified
+2023-12-02 13:56:25,850- test_NewCarHomePage.py:[35] - [INFO]- Hyundai title is verified
+, element="E1F90EA17477A01617A962E52FD009B3_element_25")>
+2023-12-02 13:56:09,795- BasePage.py:[97] - [INFO]- Finding the element locatornewCar_XPATH
+2023-12-02 13:56:09,795- BasePage.py:[38] - [INFO]- click  element XPATH locatorfindNewCar_XPATH
+2023-12-02 13:56:09,940- BasePage.py:[51] - [INFO]- clicking the element locatorfindNewCar_XPATH
+2023-12-02 13:56:14,954- BasePage.py:[38] - [INFO]- click  element XPATH locatormaruthi_XPATH
+2023-12-02 13:56:15,106- BasePage.py:[51] - [INFO]- clicking the element locatormaruthi_XPATH
+2023-12-02 13:56:20,198- BasePage.py:[38] - [INFO]- click  element XPATH locatorhyndai_XPATH
+2023-12-02 13:56:20,833- BasePage.py:[51] - [INFO]- clicking the element locatorhyndai_XPATH
